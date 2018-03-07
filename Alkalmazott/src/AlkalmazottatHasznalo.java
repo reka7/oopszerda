@@ -48,11 +48,15 @@ public class AlkalmazottatHasznalo {
 					
 			
 		}
-		int max_index = alkalmazottak[0].getFizetes();
-		for (int i = 0; i < alkalmazottak.length; i++) {
-			if (alkalmazottak[i].getFizetes() > alkalmazottak[i]. {
+		int max_index = 0;
+		for (int i = 1; i < alkalmazottak.length; i++) {
+			if (alkalmazottak[i].getFizetes() > 
+			alkalmazottak[max_index].getFizetes()) {
+				max_index = i;
+			}
 		}
-		
+		System.out.println("Max");
+		System.out.println(alkalmazottak[max_index]);
 	}
 
 }
